@@ -7,6 +7,7 @@ import MealsByLetter from '../views/MealsByLetter.vue'
 import MealsByName from '../views/MealsByName.vue'
 import MealDetails from '../views/MealDetails.vue'
 import Ingredients from '../views/Ingredients.vue'
+import Download from '../views/Download.vue'
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
         path: "/",
         name: "home",
         component: Home,
+      },
+      {
+        path: "/download/:id?",
+        name: "download",
+        component: Download,
       },
       {
         path: "/by-name/:name?",

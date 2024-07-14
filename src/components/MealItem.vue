@@ -9,6 +9,9 @@
         class="rounded-t-xl w-full h-48 object-cover"
       />
     </router-link>
+    <router-link :to="{ name: 'download', params: { id: meal.idMeal } }">
+      Download
+    </router-link>
     <div class="p-3">
       <h3 class="font-bold">{{ meal.strMeal }}</h3>
       <p class="mb-4">
