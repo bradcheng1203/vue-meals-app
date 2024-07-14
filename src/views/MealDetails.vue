@@ -13,11 +13,9 @@
         <strong class="font-bold">Tags:</strong> {{ meal.strTags }}
       </div>
     </div>
-
     <div class="my-3">
       {{ meal.strInstructions }}
     </div>
-
     <div class="grid grid-cols-1 sm:grid-cols-2">
       <div>
         <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
@@ -50,8 +48,6 @@
         </a>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -70,5 +66,4 @@ onMounted(() => {
       meal.value = data.meals[0] || {}
     })
 })
-
 </script>
